@@ -1,11 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <!-- CSS : Tailwind-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Icon : Flaticon-->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <!-- Font: PT Sans & PlayFair -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <h1>Hello World!</h1>
+
+<body class="color-bg2">
+    <!-- Header -->
+    <header class="bg-zinc-50" id="HeaderContent">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div class="flex h-16 items-center justify-between">
+                <div class="md:flex md:items-center md:gap-12 playfair-head">
+                    <img src="images/logoipsum-custom-logo.svg" alt="" srcset="" class="h-8">
+                </div>
+
+                <div class="hidden md:block">
+                    <nav aria-label="Global">
+                        <ul class="flex items-center gap-6 text-sm font-semibold">
+                            <li>
+                                <a class="text-[#A0522D] transition hover:text-[#B8860B]" href="#HeaderContent"> Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="text-[#A0522D] transition hover:text-[#B8860B]" href="#ProfileContent"> Our
+                                    Profile </a>
+                            </li>
+
+                            <li>
+                                <a class="text-[#A0522D] transition hover:text-[#B8860B]" href="#ProductContent">
+                                    Product </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <div class="sm:flex sm:gap-4">
+                        <a class="rounded-md text-[#F5F5DC] bg-[#A0522D] transition hover:bg-[#B8860B]  px-5 py-2.5 text-sm font-semibold  shadow-sm transition "
+                            href="#MessageContent">
+                            Message Us
+                        </a>
+                    </div>
+
+                    <div class="block md:hidden">
+                        <button class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- #Header -->
+    <!-- Hero Image -->
+<!-- Hero Image -->
+<section class="overflow-hidden bg-[url(https://images.unsplash.com/photo-1651525670033-279c26cc2347?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-top bg-no-repeat w-[1366px] h-[578px] flex items-center justify-center">
+    <div class="bg-[#A0522D]/80 bg-cover w-full w-[1366px] h-[578px] mx-auto p-8 md:p-12 lg:px-16 lg:py-24">
+        <div class="text-extrabold text-2xl text-left text-[#F5F5DC]">
+            Welcome <span id="welcomeName">Guest</span>
+        </div>
+        <div class="text-center mt-25">
+            <h2 class="text-2xl font-bold text-[#F5F5DC] playfair-head sm:text-3xl md:text-6xl">
+                Authentic Indonesian Traditional Foods
+            </h2>
+
+            <p class="mx-auto max-w-lg text-yellow-500 mt-4 md:mt-6 text-lg leading-relaxed">
+                Premium quality traditional Indonesian cuisine with modern packaging and international hygiene
+                standards for B2B enterprise clients
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- #Hero Image -->
+    <!-- Our Profile/About -->
+    <section class="overflow-hidden color-bg2 sm:grid sm:grid-cols-2 sm:items-center" id="ProfileContent">
+        <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+            <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+                <h2 class="text-2xl font-bold text-[#A0522D] playfair-head sm:text-3xl md:text-6xl">
+                    Our Mission & Values
+                </h2>
+
+                <p class="hidden text-[#A0522D] md:mt-4 md:block">
+                    Since 20XX, we have been committed to preserving Indonesia's rich culinary heritage while meeting
+                    modern business standards.
+                </p>
+
+                <div class="mt-2 md:mt-2 px-1">
+                    <div class="flex items-start">
+                        <i class="fi fi-rr-heart text-[#A0522D] mr-[2px] mt-1 mr-2 "></i>
+                        <div class="ml-[5px]">
+                            <span class="font-bold text-[#A0522D]">Preserving Indonesian Culinary Heritage</span>
+                            <p class="text-[#A0522D] mt-[2px] text-base">We maintain traditional recipes passed down
+                                through generations while adapting to modern food safety standards.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start mt-4">
+                        <i class="fi fi-rr-users-alt text-[#A0522D] mr-[2px] mt-1 mr-2 "></i>
+
+                        <div class="ml-[5px]">
+                            <span class="font-bold text-[#A0522D]">Empowering Local Farmers</span>
+                            <p class="text-[#A0522D] mt-[2px] text-base">We source directly from local farmers and
+                                suppliers, supporting rural communities and ensuring ingredient freshness.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start mt-4">
+                        <i class="fi fi-rr-shield text-[#A0522D] mr-[2px] mt-1 mr-2 "></i>
+                        <div class="ml-[5px]">
+                            <span class="font-bold text-[#A0522D]">Maintaining Food Safety Standards</span>
+                            <p class="text-[#A0522D] mt-[2px] text-base">Our modern facilities comply with international
+                                food safety regulations while preserving authentic flavors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img alt=""
+            src="https://images.unsplash.com/photo-1651525670114-2b8117390b28?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]" />
+    </section>
+    <!-- #Our Profile/About -->
+    <!-- Product -->
+    <section class="overflow-hidden color-bg2 p-8 md:p-12 lg:px-16 lg:py-12" id="ProductContent">
+        <div class="text-center">
+            <h2 class="text-2xl font-bold text-[#A0522D] playfair-head sm:text-3xl md:text-6xl">
+                Featured Premium Products
+            </h2>
+
+            <p class="mx-auto max-w-lg text-[#A0522D] mt-4 mb-4 md:mt-6 text-lg leading-relaxed">
+                Handcrafted traditional Indonesian foods with no artificial preservatives, using only premium local
+                ingredients
+            </p>
+        </div>
+        <!-- Card -->
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+            <!-- Article 1 -->
+            <article class="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
+                <img alt="" src="images/Pecel.png" class="h-56 w-full object-cover" />
+
+                <div class="bg-zinc-50 p-4 sm:p-6">
+                    <p class="block text-xs text-[#B8860B]"> 200g • Authentic instant pecel with traditional spice blend
+                    </p>
+
+                    <h1 class="mt-0.5 text-xl text-[#A0522D] font-bold"> Instan Rasa Sejati</h1>
+                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-[#A0522D]">
+                        <i class="fi fi-rr-check-circle text-green-500 mr-[2px]"></i> No artificial preservatives
+                    </p>
+                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-[#A0522D] font-medium">
+                        <i class="fi fi-rr-check-circle text-green-500 mr-[2px]"></i> Premium local ingredients
+                    </p>
+                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-[#A0522D]">
+                        <i class="fi fi-rr-check-circle text-green-500 mr-[2px]"></i> Authentic traditional taste
+                    </p>
+
+                </div>
+            </article>
+            <!-- Article 2 -->
+            <article class="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
+                <img alt="" src="images/Sambal.png" class="h-56 w-full object-cover" />
+
+                <div class="bg-zinc-50 p-4 sm:p-6">
+                    <p class="block text-xs text-[#B8860B]"> 150g • Traditional anchovy chili sauce with green chilies
+                    </p>
+
+                    <h1 class="mt-0.5 text-xl text-[#A0522D] font-bold">Sambal Teri Lombok Ijo "Sego Ndeso"</h1>
+                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-[#A0522D]">
+                        <i class="fi fi-rr-check-circle text-green-500 mr-[2px]"></i> No artificial preservatives
+                    </p>
+                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-[#A0522D] font-medium">
+                        <i class="fi fi-rr-check-circle text-green-500 mr-[2px]"></i> Premium local ingredients
+                    </p>
+                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-[#A0522D]">
+                        <i class="fi fi-rr-check-circle text-green-500 mr-[2px]"></i> Authentic traditional taste
+                    </p>
+
+                </div>
+            </article>
+            <!-- Article 3 -->
+            <article class="overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg">
+                <img alt="" src="images/Cookies.png" class="h-56 w-full object-cover" />
+
+                <div class="bg-zinc-50 p-4 sm:p-6">
+                    <p class="block text-xs text-[#B8860B]"> 250g • Traditional turmeric cookies with herbal benefits
+                    </p>
+
+                    <h1 class="mt-0.5 text-xl text-[#A0522D] font-bold">Kue Kering Temulawak "Herbal Crunch"</h1>
+                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-[#A0522D]">
+                        <i class="fi fi-rr-check-circle text-green-500 mr-[2px]"></i> No artificial preservatives
+                    </p>
+                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-[#A0522D] font-medium">
+                        <i class="fi fi-rr-check-circle text-green-500 mr-[2px]"></i> Premium local ingredients
+                    </p>
+                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-[#A0522D]">
+                        <i class="fi fi-rr-check-circle text-green-500 mr-[2px]"></i> Authentic traditional taste
+                    </p>
+
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- #Product -->
+    <!-- Form Comment -->
+    <section class="overflow-hidden color-bg1 p-8 md:p-12 lg:px-16 lg:py-12" id="MessageContent">
+        <div class="text-center">
+            <h2 class="text-2xl font-bold text-[#F5F5DC] playfair-head sm:text-3xl md:text-6xl">
+                Message Us
+            </h2>
+
+            <p class="mx-auto max-w-lg text-yellow-500 mt-4 mb-4 md:mt-6 text-lg leading-relaxed">
+                Get in touch with our B2B team for enterprise pricing, bulk orders, and custom solutions
+            </p>
+        </div>
+        <!-- Form-->
+        <section class="overflow-hidden color-bg2 p-8 md:p-12 lg:px-16 lg:py-12 rounded ">
+            <form id="messageForm">
+                <div class="py-2" >
+                    <label for="name" class="block text-sm/6 font-medium text-[#A0522D]">Name *</label>
+                    <div class="mt-2">
+                        <div
+                            class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
+                            <input id="name" type="text" name="name" placeholder="Enter your full name" required
+                                class="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Input: Date -->
+                <div class="py-2">
+                    <label for="date" class="block text-sm/6 font-medium text-[#A0522D]">Date *</label>
+                    <div class="mt-2">
+                        <div
+                            class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
+                            <input id="date" type="date" name="date" required
+                                class="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Input Radio -->
+                <div class="py-2">
+                    <label class="block text-sm/6 font-medium text-[#A0522D]">Gender</label>
+                    <div class="flex ml-3">
+                        <div class="flex items-center me-4">
+                            <input id="male" type="radio" value="Male" name="gender"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="male"
+                                class="ms-2 text-sm font-medium text-[#A0522D] dark:text-gray-300">Male</label>
+                        </div>
+                        <div class="flex items-center me-4">
+                            <input id="female" type="radio" value="Female" name="gender"
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                            <label for="female"
+                                class="ms-2 text-sm font-medium text-[#A0522D] dark:text-gray-300">Female</label>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Message -->
+                <div class="py-2">
+                    <label for="message">
+                        <span class="text-sm font-medium text-[#A0522D]">Message * (minimum 10 characters)</span>
+                        <textarea id="message" name="message" required minlength="10"
+                            class="mt-0.5 w-full resize-none rounded border-gray-300 bg-white shadow-sm sm:text-sm"
+                            rows="4"
+                            placeholder="Tell us about your business needs, bulk order requirements, or any questions you have..."></textarea>
+                    </label>
+
+                    <div class="mt-1.5 flex items-center justify-end gap-2">
+                        <button type="button" id="clearBtn"
+                            class="rounded border border-transparent px-3 py-1.5 text-sm font-medium text-gray-700 transition-colors hover:text-gray-900">
+                            Clear
+                        </button>
+
+                        <button type="submit" id="saveBtn"
+                            class="rounded border border-gray-300 px-3 py-1.5 text-sm font-medium text-gray-900 shadow-sm transition-colors hover:bg-gray-100">
+                            Send Message
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Recent Messages Section -->
+        <section class="overflow-hidden color-bg2 p-8 mt-12 md:p-12 lg:px-16 lg:py-12 rounded">
+            <h2 class="text-2xl text-center playfair-head text-[#A0522D] mb-4">Recent Messages</h2>
+            <div id="recentMessages"></div>
+        </section>
+    </section>
+    <!-- #Form Comment -->
+    <!-- Footer -->
+    <footer class="bg-zinc-50">
+        <div class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
+            <div class="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
+                <a class="inline-block rounded-full bg-[#A0522D] p-2 text-white shadow-sm transition text-[#F5F5DC] transition hover:bg-[#B8860B] sm:p-3 lg:p-4"
+                    href="#HeaderContent">
+                    <span class="sr-only">Back to top</span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="lg:flex lg:items-end lg:justify-between">
+                <div>
+                    <div class="flex justify-center lg:justify-start">
+                        <img src="images/logoipsum-custom-logo.svg" alt="" srcset="" class="h-10">
+                    </div>
+
+                    <p class="mx-auto mt-6 max-w-md text-center leading-relaxed text-[#A0522D] lg:text-left">
+                        Premium quality traditional Indonesian cuisine with modern packaging and international hygiene
+                        standards for B2B enterprise clients
+                    </p>
+                </div>
+
+                <ul
+                    class="mt-12 flex flex-wrap justify-center gap-6 font-semibold md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
+                    <li>
+                        <a class="text-[#A0522D] transition hover:text-[#B8860B]" href="#HeaderContent"> Home </a>
+                    </li>
+
+                    <li>
+                        <a class="text-[#A0522D] transition hover:text-[#B8860B]" href="#ProfileContent"> About </a>
+                    </li>
+
+                    <li>
+                        <a class="text-[#A0522D] transition hover:text-[#B8860B]" href="#ProductContent"> Product </a>
+                    </li>
+
+                    <li>
+                        <a class="text-[#A0522D] transition hover:text-[#B8860B]" href="#MessageContent"> Messege Us </a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="mt-12 text-center text-sm text-gray-500 lg:text-right">
+                Copyright PT XYZ 2025 &copy;. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- #Footer -->
+     <script src="js/script.js"></script>
 </body>
+
 </html>

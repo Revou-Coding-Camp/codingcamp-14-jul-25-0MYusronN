@@ -1,0 +1,37 @@
+body{
+  font-family: "PT Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+/* .pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.pt-sans-regular-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* <weight>: Use a value from 300 to 900*/
+.playfair-head {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Color Based */
+.color-bg1{
+    background-color: #A0522D;
+}
+.color-bg2{
+    background-color: #F5F5DC;
+}
+.color-bg3{
+    background-color: #B8860B;
+}
